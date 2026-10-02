@@ -127,5 +127,4 @@ jobs:
             & "C:\Program Files\Tailscale\tailscale.exe" up --authkey ${{ secrets.TAILSCALE_AUTH_KEY }} --hostname "enigmano-${{ github.run_id }}"
           }
           
-          Start-Sleep -Seconds 60
-        }
+          Start-Sleep -Seconds 60 
