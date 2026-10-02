@@ -1,6 +1,6 @@
 PC criado pelo @alves7.pcm
 
-
+on:
   workflow_dispatch:
     inputs:
       instance_number:
@@ -94,11 +94,11 @@ jobs:
       run: |
         Write-Host "`n=== CONNECTION DETAILS (TAILSCALE) ===" -ForegroundColor Green
         Write-Host "╔══════════════════════════════════════╗" -ForegroundColor Cyan
-        Write-Host "║ ENIGMANO RDP ACCESS ║" -ForegroundColor Cyan  
+        Write-Host "║         ENIGMANO RDP ACCESS          ║" -ForegroundColor Cyan  
         Write-Host "╠══════════════════════════════════════╣" -ForegroundColor Cyan
-        Write-Host "║ Host: $env:TAILSCALE_IP ║" -ForegroundColor White
-        Write-Host "║ Username: runneradmin ║" -ForegroundColor White
-        Write-Host "║ Password: P@ssw0rd! ║" -ForegroundColor White
+        Write-Host "║ Host: $env:TAILSCALE_IP              ║" -ForegroundColor White
+        Write-Host "║ Username: runneradmin                ║" -ForegroundColor White
+        Write-Host "║ Password: P@ssw0rd!                  ║" -ForegroundColor White
         Write-Host "╚══════════════════════════════════════╝" -ForegroundColor Cyan
         
         Write-Host "`nConnection Instructions:" -ForegroundColor Yellow
@@ -129,4 +129,3 @@ jobs:
           
           Start-Sleep -Seconds 60
         }
-        
